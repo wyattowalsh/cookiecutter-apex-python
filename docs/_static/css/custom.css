@@ -1,0 +1,429 @@
+/* -- theme variables -------------------------------------------------------------- */
+html {
+}
+
+html[data-theme="light"] {
+	--pst-color-primary: rgba(187, 38, 73, 1);
+	--pst-color-primary-text: black;
+	--pst-color-secondary: rgba(147, 149, 151, 1);
+	--pst-color-attention: rgba(245, 223, 77, 1);
+}
+
+html[data-theme="dark"] {
+	--pst-color-primary: rgba(187, 38, 73, 1);
+	--pst-color-primary-text: white;
+	--pst-color-secondary: rgba(147, 149, 151, 1);
+	--pst-color-attention: rgba(245, 223, 77, 1);
+}
+
+/* -- buttons -------------------------------------------------------------- */
+button.copybtn {
+	color: #708090;
+	background-color: #708090;
+}
+
+/* -- icons -------------------------------------------------------------- */
+i.fa-github:before {
+	color: #181717;
+}
+
+i.fa-magnifying-glass:before {
+	color: #d64933;
+}
+/* -- version switcher --------------------------------------------------------------
+Style all links with a specific subset of versions */
+.version-switcher__container a[data-version="0.0.1"] {
+	background-color: #d64933;
+}
+
+.bd-footer {
+	width: 100%;
+	background-color: #939597;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-items: end;
+	align-items: center;
+}
+
+.footer-item {
+	display: flex;
+}
+
+.footer-item:not(:last-child) {
+	border-right: 1px solid var(--pst-color-text-base);
+	margin-right: 0.5em;
+	padding-right: 0.5em;
+}
+
+.bd-footer > .footer-items__start {
+	flex-direction: row;
+	text-wrap: wrap;
+}
+
+.welcome-image {
+	padding: 1rem;
+	width: 65%;
+	height: auto;
+}
+
+.wave {
+	font-size: 2.5rem;
+	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.5s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+	display: inline-block;
+	padding-left: 0.5rem;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* max width display mod*/
+.bd-content {
+	flex-grow: 1;
+	max-width: 100%;
+}
+.bd-navbar {
+}
+.logo {
+	height: 100%;
+	width: auto;
+	padding: 0.15rem;
+}
+.logo:hover {
+	background-color: rgba(187, 38, 73, 0.45);
+}
+.nav-internal {
+	font-weight: 700;
+	padding: 2rem;
+}
+.nav-internal:hover {
+	background-color: rgba(187, 38, 73, 0.45);
+}
+.sd-card-img-top {
+	height: 50%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+}
+.std-ref {
+	color: #bb2649;
+	text-decoration: underline;
+}
+
+.std-ref:after {
+	color: inherit;
+	content: " \f08e";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+}
+.sd-card > a > .std-ref {
+	color: inherit;
+}
+.sd-card > a > .std-ref:after {
+	color: inherit;
+	content: "";
+}
+.search-button__button {
+	font-size: 1.5rem;
+}
+.search-button__button:hover {
+	font-size: 1.8rem;
+}
+.theme-switch {
+	font-size: 1.5rem;
+}
+.theme-switch:hover {
+	font-size: 1.8rem;
+}
+.icon-link-image {
+	font-size: 1.2rem;
+}
+.icon-link-image:hover {
+	font-size: 1.5rem;
+}
+.fa-square-github {
+	color: #181717;
+	font-size: 1.85rem;
+}
+.fa-square-github:hover {
+	font-size: 2.15rem;
+}
+
+blockquote {
+	border-left: 0.5rem solid #92a8d1;
+}
+
+a {
+	color: #bb2649;
+	text-decoration: underline;
+}
+a:hover {
+	color: var(--pst-color-attention);
+}
+
+p > .std-ref {
+	color: #bb2649;
+	text-decoration: underline;
+}
+p > .std-ref:after {
+	color: inherit;
+	content: "";
+}
+
+li > a > span > .std-ref {
+	color: black;
+}
+
+li > a > .std-ref:after {
+	color: inherit;
+	content: "";
+}
+
+h1 > a > .std-ref:after {
+	color: inherit;
+	content: "";
+}
+
+h1 > .std-ref:after {
+	color: inherit;
+	content: "";
+}
+
+.fa-github {
+	color: black;
+	font-size: 1.5rem;
+}
+
+.site-hr {
+	width: 85%;
+	height: 0;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+	border-top: thick double #bb2649;
+	text-align: center;
+	text-justify: center;
+	color: var(--pst-color-primary);
+	-webkit-tap-highlight-color: var(--pst-color-primary);
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.site-hr:before {
+	content: "🍪";
+	position: relative;
+	top: -2rem;
+	-webkit-tap-highlight-color: var(--pst-color-primary);
+}
+
+.nav-internal > .nav-icon {
+	font-size: clamp(1.5rem, 1.5vw, 2rem);
+	padding-left: 0.25rem;
+}
+
+.sidebar-primary-item > .logo {
+	width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidebar-divider {
+	height: 0.2rem;
+	line-height: 0.2rem;
+	/* top border with offset radial gradient */
+	background: radial-gradient(circle farthest-side, #939597, #955251);
+	background-repeat: no-repeat;
+	/* border-top: 0.25rem solid #bb2649; */
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.logo {
+	height: 85%;
+	width: auto;
+	background-color: rgba(147, 149, 151, 0.2);
+}
+
+.landing-title {
+	/* extra bold text with a cool gradient background */
+	font-weight: 900;
+	font-size: clamp(1rem, 20vw, 2.5rem);
+	font-family: var(--pst-font-family-monospace);
+	letter-spacing: 0;
+	background-image: linear-gradient(
+		-225deg,
+		#5f4b8b 0%,
+		#9bb7d4 29%,
+		#d94f70 67%,
+		#f5df4d 100%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+	/* text-decoration-line: underline;
+	text-decoration-thickness: 0.25rem;
+	text-decoration-color: #bb2649; */
+}
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
+
+.sd-card-title {
+	font-size: 120%;
+}
+
+.sd-card-text {
+	font-size: 90%;
+}
+.sd-card-img-top {
+	color: var(--pst-color-primary);
+	background: transparent;
+}
+.navbar-header-items__center {
+	margin-right: 0;
+}
+.bd-search > input {
+	border-color: var(--pst-color-primary);
+	font-weight: 700;
+}
+.icon::before {
+	display: inline-block;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.color-section {
+	font-weight: 800;
+	background: linear-gradient(
+			225deg,
+			rgb(251, 175, 21),
+			rgb(251, 21, 242),
+			rgb(21, 198, 251)
+		)
+		0% 0% / 200% 200% !important;
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	animation: 2s ease 0s infinite normal none running fontgradient !important;
+	-webkit-animation: fontgradient 2s ease infinite !important;
+	-moz-animation: fontgradient 2s ease infinite !important;
+	animation: fontgradient 2s ease infinite !important;
+}
+@-webkit-keyframes fontgradient {
+	0% {
+		background-position: 0% 92%;
+	}
+	50% {
+		background-position: 100% 9%;
+	}
+	100% {
+		background-position: 0% 92%;
+	}
+}
+@-moz-keyframes fontgradient {
+	0% {
+		background-position: 0% 92%;
+	}
+	50% {
+		background-position: 100% 9%;
+	}
+	100% {
+		background-position: 0% 92%;
+	}
+}
+@keyframes fontgradient {
+	0% {
+		background-position: 0% 92%;
+	}
+	50% {
+		background-position: 100% 9%;
+	}
+	100% {
+		background-position: 0% 92%;
+	}
+}
+.color-icon {
+	background: linear-gradient(
+			225deg,
+			rgb(251, 175, 21),
+			rgb(251, 21, 242),
+			rgb(21, 198, 251)
+		)
+		0% 0% / 300% 300% !important;
+	color: var(--pst-color-primary);
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	animation: 2s ease 0s infinite normal none running fontgradient !important;
+	-webkit-animation: fontgradient 2s ease infinite !important;
+	-moz-animation: fontgradient 2s ease infinite !important;
+	animation: fontgradient 2s ease infinite !important;
+}
+
+.logo:after {
+	content: "cookiecutter-python";
+	font-family: var(--pst-font-family-monospace);
+	font-weight: 900;
+	letter-spacing: 0;
+	background-image: linear-gradient(
+		-225deg,
+		#5f4b8b 0%,
+		#9bb7d4 29%,
+		#d94f70 67%,
+		#f5df4d 100%
+	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #fff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+}
+
+code {
+	background-color: rgba(147, 149, 151, 0.2);
+}

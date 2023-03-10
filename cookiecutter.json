@@ -1,0 +1,13 @@
+{
+	"project_name": "Cookiecutter Python",
+	"project_slug": "cookiecutter-python",
+	"version": "0.1.0",
+	"language": "en",
+	"short_description": "Comprehensive Cookiecutter template for Python projects.",
+	"description": "Includes Poetry for dependency management, pre-commit hooks, and more.",
+	"author_full_name": "Wyatt Walsh",
+	"author_email": "wyattowalsh@gmail.com",
+	"open_source_license": ["MIT", "BSD", "ISC", "Apache-2.0", "GPL-3.0"],
+	"github_username": "wyattowalsh",
+	"repository_name": "cookiecutter-python"
+}
