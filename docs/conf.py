@@ -43,7 +43,7 @@ extensions = [
     'hoverxref.extension',
     'sphinx_sitemap',
     'sphinx_togglebutton',
-    'sphinx-favicon'
+    'sphinx_favicon'
 ]
 
 templates_path = ['_templates']

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "cookiecutter-apex-python"
 version = "0.1.0"
-description = "Comprehensive Cookiecutter template for Python projects."
+description = "Comprehensive Cookiecutter template for the best Python projects."
 authors = ["Wyatt  Walsh <wyattowalsh@gmail.com>"]
 license = "GPL-3.0-only"
 readme = "README.md"
