@@ -18,7 +18,7 @@ current_year = str(datetime.now().year)
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Cookiecutter Python'
+project = 'cookiecutter-apex-python'
 copyright = f'{current_year}, Wyatt Walsh'
 author = 'Wyatt Walsh'
 release = '0.1.0'
@@ -97,9 +97,9 @@ html_theme_options = {
     "navbar_align": "left"
 }
 html_context = {
-    "github_url": "https://github.com/wyattowalsh/cookiecutter-python", # or your GitHub Enterprise site
+    "github_url": "https://github.com/wyattowalsh/cookiecutter-apex-python", # or your GitHub Enterprise site
     "github_user": "wyattowalsh",
-    "github_repo": "cookiecutter-python",
+    "github_repo": "cookiecutter-apex-python",
     "github_version": "main",
     "doc_path": "./docs/",
     "default_mode": "auto"

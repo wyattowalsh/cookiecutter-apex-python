@@ -401,7 +401,8 @@ h1 > .std-ref:after {
 }
 
 .logo:after {
-	content: "cookiecutter-python";
+	content: "cookiecutter-apex-python";
+	font-size: 0.8rem;
 	font-family: var(--pst-font-family-monospace);
 	font-weight: 900;
 	letter-spacing: 0;

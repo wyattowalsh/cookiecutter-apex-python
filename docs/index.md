@@ -3,7 +3,7 @@ notoc: true
 ---
 
 ```{raw} html
-<span class="landing-title"><code style="padding: 0.5rem;">cookiecutter-python</code></span>
+<span class="landing-title"><code style="padding: 0.5rem;">cookiecutter-apex-python</code></span>
 ```
 
 ```{raw} html
